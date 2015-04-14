@@ -32,17 +32,6 @@ while (time.time() < end):
             if row[2] == plant and row[1] == "Turbine":
                 system = row[0]
         for row in c.execute("SELECT * FROM Sensors"):
-            if row[2] == system and row[1] == "Humidity":
-                sensor = row[0]
-        value = factory.get_sensor_value('PlantZero', 'Turbine', 'Humidity')
-        c.execute("INSERT INTO SensorValues VALUES (" + str(time.time()) + "," + str(sensor) + "," + str(value) + ")")
-        for row in c.execute("SELECT * FROM Plants"):
-            if row[1] == 'PlantZero':
-                plant = row[0]
-        for row in c.execute("SELECT * FROM Systems"):
-            if row[2] == plant and row[1] == "Turbine":
-                system = row[0]
-        for row in c.execute("SELECT * FROM Sensors"):
             if row[2] == system and row[1] == "Temperature":
                 sensor = row[0]
         value = factory.get_sensor_value('PlantZero', 'Turbine', 'Temperature')
