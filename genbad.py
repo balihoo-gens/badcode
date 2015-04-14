@@ -19,3 +19,9 @@ for plant in plants:
     for sys in PlantDatabase.system_types:
         for sen in PlantDatabase.sensor_types:
              print(gen_insert_val_clause(plant,sys,sen))
+
+
+#now add some awful and complicated system status update code
+
+#then add some creative reports, like the average sensor values by location
+
