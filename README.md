@@ -1,5 +1,7 @@
 # badcode
-Some awful python database code that needs improvement
+![A possible developer's reaction to this code](http://imgs.xkcd.com/comics/code_quality.png)
+
+Some awful python database code that needs improvement, intended as a coding test.
 
 ## Goal
 This project's purpose is to yield a programming test for prospective candidates. The test is this: 'given this godawful code, please create an improved version with the same functionality'. A skilled developer should not need more than an hour or two to clean up the mess. Less experienced candidates may need more time. The code does not come with documentation; part of the exercise is learning what it does. This does mean that the code should not be overly cryptic or deliberately misleading.
